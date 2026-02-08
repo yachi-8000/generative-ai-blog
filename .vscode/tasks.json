@@ -1,0 +1,40 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Docker: Build + Up",
+      "type": "shell",
+      "command": "docker compose up --build",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Docker: Down",
+      "type": "shell",
+      "command": "docker compose down",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "NPM: Install",
+      "type": "shell",
+      "command": "npm ci",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "NPM: Dev Server",
+      "type": "shell",
+      "command": "npm run start -- --host 0.0.0.0 --port 3000",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "NPM: Build",
+      "type": "shell",
+      "command": "npm run build",
+      "group": "build",
+      "problemMatcher": []
+    }
+  ]
+}
